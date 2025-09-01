@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+            body{
+                background-color: bisque;
+            }
+
+            h1{
+                padding-left: 100px;
+                color:peru
+            }
+            
+            input[type="text"]{
+                   width: 50%;
+                   padding: 12px;
+                   font-size: 18px;
+                   border: 2px solid #ccc;
+                   border-radius: 8px;
+                   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                   padding-left: 25px;         
+            } 
+
+            .userform{
+                background-color: whitesmoke;
+                border: 900px;
+                border-radius: 8px;
+                padding-bottom: 50px;
+                margin-right: 300px;
+                margin-top: 100px;
+                margin-left:200px ;
+                padding-left:100px ;
+            }
+
+            .userforminside{
+                padding-left:100px ;
+            }
+
+            button{
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    background-color:saddlebrown;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    padding-right: 20px;
+            }
+                   
+        </style>
+    </head>
+    <body>
+        <div class="userform">
+            <h1>USER_FORM</h1>
+            <div class="userforminside">
+            <label for="first name">Frist name:<br></label>
+            <input type="text" id="first name" name="first name" value=""placeholder="enter your first name"><br>
+            <label for="last name">last name:<br></label>
+            <input type="text" id="last name" name="second name" value=""placeholder="enter your last name"><br>
+            <label for="id">id:<br></label>
+            <input type="text" id="id" name="id" value=""placeholder="enter your id">
+            <br><br><button onclick="signedin()">sign-in</button>
+        </div>
+        </div>
+        <script>
+            document.getElementById('frist name').Value ;
+            document.getElementById('last name').value ;
+            document.getElementById('id').value ;
+            function signedin(){
+                alert("you have signed in succefully")
+                }               
+        </script>
+    </body>
+</html>
+
+ 
+            
