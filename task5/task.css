@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gray;
+    color:darkolivegreen
+}
+
+h1{
+    padding: 3px;
+}
+header, footer{
+    background-color: burlywood;
+    color:black;
+    padding: 20px;
+    text-align: center;
+    text-decoration-line: none;
+}
+header,footer a{
+    text-decoration-line: none;
+}
+nav a{
+    color:brown;
+    padding: 20px;
+    text-decoration-line: none;
+}
+
+.profilecontainer{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profilecard{
+    display:flex;
+    background-color:bisque;
+    border:2px solid;
+    width:300px;
+    padding: 20px;
+    gap:15px;
+    align-items: center;
+}
+
+.profilecard img{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+}
+
+.contentform{
+    background-color:navajowhite;
+    padding:20px;
+    border:20px;
+    width:300px;
+}
+
+.contentform{
+    display:block;
+    width:100%;
+    margin-bottom: 15px;
+    border: 2px;
+}
+
+.contactform button{
+    color:brown;
+    padding:20px;
+    background-color:burlywood;
+    cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .profilecontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+   

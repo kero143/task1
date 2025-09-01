@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Profile</title>
+        <link rel="stylesheet" href="task.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>My Profile</h1>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+            </nav>
+        </header>
+
+        <main class="profilecontainer">
+            <div class="profilecard">
+                <img src="https://www.alleganyco.gov/wp-content/uploads/unknown-person-icon-Image-from.png" alt="Profile Picture">
+                
+                <div class="profileinfo">
+                    <h3>Hi, my name is Kero Emad</h3>
+                    <h4>I have graduated from the Faculty of Computer Science and Artificial Intelligence and I work as a Web Developer</h4>
+                </div>
+            </div>
+
+            <form class="contentform">
+                <h1>Contact Me</h1>
+
+                <label for="name">First Name:<br></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+                <label for="email">Email:<br></label>
+                <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+
+                <label for="message">Message:<br></label>
+                <textarea id="message" name="message" placeholder="Your text"></textarea><br>
+
+                <button onclick="submitForm()">Sign-in</button>
+
+                <p>For more information, please visit my profile <a href="#">Kero Emad</a></p>    
+            </form>
+        </main> 
+
+        <footer>
+            <a href="#">Kero Emad</a>
+            <p>&copy; 2025</p>
+        </footer>
+
+        <script>
+            function submitForm() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                alert("You have submitted successfully");
+            }
+        </script>
+    </body>
+</html>
+
